@@ -1,0 +1,155 @@
+# Artificial Intelligence: A Modern Approach (4th Edition)
+# Chapter 18: Learning from Examples - Key Excerpts
+
+## 18.1 Forms of Learning
+
+### Supervised Learning
+- **Input**: Labeled examples (x, f(x))
+- **Output**: Hypothesis h that approximates f
+- **Goal**: Minimize error on training examples
+- **Examples**: Classification, regression
+
+### Unsupervised Learning
+- **Input**: Unlabeled examples x
+- **Output**: Patterns or structure in data
+- **Goal**: Discover hidden structure
+- **Examples**: Clustering, dimensionality reduction
+
+### Reinforcement Learning
+- **Input**: States, actions, rewards
+- **Output**: Policy for action selection
+- **Goal**: Maximize long-term reward
+- **Examples**: Game playing, robot control
+
+### Other Forms
+- **Semi-supervised**: Mix of labeled and unlabeled
+- **Active learning**: Choose which examples to label
+- **Transfer learning**: Apply knowledge from one domain to another
+
+## 18.2 Supervised Learning
+
+### Learning a Real-Valued Function
+- **Hypothesis space H**: Set of possible hypotheses
+- **Training data D**: Pairs (x, f(x))
+- **Learning algorithm**: Choose h ∈ H that best fits D
+
+### Inductive Bias
+- **Restriction bias**: Limit hypothesis space
+- **Preference bias**: Prefer certain hypotheses over others
+- **All learning algorithms have inductive bias**
+
+### Overfitting
+- **Definition**: Hypothesis fits training data too closely
+- **Symptoms**: High training accuracy, low test accuracy
+- **Prevention**: Cross-validation, regularization, simpler models
+
+## 18.3 Learning Decision Trees
+
+### Decision Tree Representation
+- **Internal nodes**: Tests on attribute values
+- **Edges**: Possible test outcomes
+- **Leaf nodes**: Class predictions
+- **Advantages**: Interpretable, handle mixed data types
+
+### ID3 Algorithm
+1. **Select attribute**: Choose most informative attribute
+2. **Create branches**: One for each attribute value
+3. **Recurse**: Build subtrees for each branch
+4. **Stop**: When all examples have same class
+
+### Information Gain
+- **Entropy**: Measure of impurity in data
+- **Information gain**: Reduction in entropy from split
+- **Formula**: Gain(S, A) = Entropy(S) - Σ (|S_v|/|S|) * Entropy(S_v)
+
+### Overfitting Prevention
+- **Pre-pruning**: Stop growing tree early
+- **Post-pruning**: Remove subtrees that don't improve validation accuracy
+- **Reduced error pruning**: Use validation set to guide pruning
+
+## 18.4 Model Evaluation and Selection
+
+### Evaluation Metrics
+- **Accuracy**: (TP + TN) / (TP + TN + FP + FN)
+- **Precision**: TP / (TP + FP)
+- **Recall**: TP / (TP + FN)
+- **F1-score**: 2 * Precision * Recall / (Precision + Recall)
+
+### Cross-Validation
+- **k-fold CV**: Split data into k folds, train on k-1, test on 1
+- **Leave-one-out**: k = n (number of examples)
+- **Stratified**: Maintain class distribution in folds
+
+### Comparing Learning Algorithms
+- **Statistical significance**: Is difference due to chance?
+- **Learning curves**: Performance vs training set size
+- **Computational complexity**: Training and prediction time
+
+## 18.5 Learning in the Limit of Data
+
+### Sample Complexity
+- **PAC Learning**: Probably Approximately Correct
+- **Finite hypothesis spaces**: Learnable with sufficient data
+- **Infinite hypothesis spaces**: May require infinite data
+
+### VC Dimension
+- **Vapnik-Chervonenkis dimension**: Measure of hypothesis space capacity
+- **Theorem**: If VC(H) finite, then PAC learnable
+- **Intuition**: More complex models need more data
+
+### Bias-Variance Tradeoff
+- **Bias**: Error from wrong assumptions
+- **Variance**: Error from sensitivity to training data
+- **Overfitting**: High variance
+- **Underfitting**: High bias
+
+## 18.6 Bayesian Learning
+
+### Bayes' Theorem
+P(h|D) = P(D|h) * P(h) / P(D)
+
+Where:
+- **P(h)**: Prior probability of hypothesis
+- **P(D|h)**: Likelihood of data given hypothesis
+- **P(h|D)**: Posterior probability
+- **P(D)**: Evidence (normalizing constant)
+
+### Maximum A Posteriori (MAP)
+- Choose h that maximizes P(h|D)
+- Equivalent to maximum likelihood if uniform prior
+
+### Bayesian Prediction
+- **Predictive distribution**: P(x'|D) = Σ P(x'|h) * P(h|D)
+- **Accounts for uncertainty** in hypothesis
+
+### Advantages
+- **Incorporates prior knowledge**
+- **Handles uncertainty explicitly**
+- **Provides confidence measures**
+
+## 18.7 Computational Learning Theory
+
+### Probably Approximately Correct (PAC)
+- **ε-accurate**: Error ≤ ε
+- **δ-confidence**: Probability ≥ 1-δ
+- **Sample complexity**: Number of examples needed
+
+### Mistake Bounds
+- **Online learning**: Predict, get correct answer, update
+- **Mistake bound**: Maximum mistakes before convergence
+- **Halving algorithm**: Achieves log|H| mistake bound
+
+### Cryptographic Limitations
+- **No free lunch**: No universally best learning algorithm
+- **Computational intractability**: Some learning problems are hard
+
+## 18.8 Summary
+
+- Learning enables agents to improve performance
+- Supervised learning: Learn from labeled examples
+- Decision trees: Interpretable, effective classifiers
+- Model evaluation: Cross-validation, statistical tests
+- Bayesian learning: Incorporates prior knowledge
+- Computational limits: What is learnable in principle
+
+Key insight: Learning is about generalizing from experience, but requires careful attention to overfitting, evaluation, and computational feasibility.

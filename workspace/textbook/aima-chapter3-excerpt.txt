@@ -1,0 +1,142 @@
+# Artificial Intelligence: A Modern Approach (4th Edition)
+# Chapter 3: Solving Problems by Searching - Key Excerpts
+
+## 3.1 Problem-Solving Agents
+
+### Problem-Solving Process
+1. **Goal Formulation**: What are we trying to achieve?
+2. **Problem Formulation**: What actions and states are relevant?
+3. **Search**: Find a sequence of actions to reach goal
+4. **Execute**: Carry out the solution
+
+### Well-Defined Problems
+A problem is defined by:
+- **Initial State**: Starting situation
+- **Actions**: Possible actions in each state
+- **Transition Model**: Result of each action in each state
+- **Goal Test**: Determines if a state is a goal
+- **Path Cost**: Numerical cost of each path
+
+### Example: Romania Route Finding
+- **States**: Cities in Romania
+- **Initial State**: Arad
+- **Actions**: Drive to adjacent cities
+- **Goal Test**: Reach Bucharest
+- **Path Cost**: Distance between cities
+
+## 3.2 Example Problems
+
+### Toy Problems
+- **8-puzzle**: Sliding tile puzzle
+- **8-queens**: Place queens on chessboard
+- **Cryptarithmetic**: Letter-to-digit mapping puzzles
+
+### Real-World Problems
+- **Route finding**: GPS navigation
+- **Traveling salesperson**: Visit cities with minimum cost
+- **VLSI layout**: Arrange circuit components
+- **Robot navigation**: Move through environment
+- **Assembly sequencing**: Order of assembly steps
+
+## 3.3 Search Algorithms
+
+### Search Tree vs State Graph
+- **Search Tree**: Tree of possible action sequences
+- **State Graph**: Graph of possible states
+- **Frontier**: Set of nodes to be expanded next
+
+### General Search Algorithm
+```
+function TREE-SEARCH(problem) returns a solution, or failure
+    initialize the frontier using the initial state of problem
+    loop do
+        if the frontier is empty then return failure
+        choose a leaf node and remove it from the frontier
+        if the node contains a goal state then return the corresponding solution
+        expand the chosen node, adding the resulting nodes to the frontier
+```
+
+### Evaluation Criteria
+- **Completeness**: Does it always find a solution if one exists?
+- **Optimality**: Does it find the best solution?
+- **Time Complexity**: How long does it take?
+- **Space Complexity**: How much memory does it use?
+
+## 3.4 Uninformed Search Strategies
+
+### Breadth-First Search (BFS)
+- Expands shallowest nodes first
+- **Complete**: Yes (finite state spaces)
+- **Optimal**: Yes (unit step costs)
+- **Time**: O(b^d), Space: O(b^d)
+- **b**: branching factor, **d**: depth
+
+### Uniform-Cost Search (UCS)
+- Expands lowest path cost first
+- **Complete**: Yes
+- **Optimal**: Yes
+- **Time/Space**: O(b^{C*/ε}) where C* is optimal cost, ε is min cost
+
+### Depth-First Search (DFS)
+- Expands deepest nodes first
+- **Complete**: No (infinite spaces)
+- **Optimal**: No
+- **Time**: O(b^m), Space: O(bm)
+- **m**: maximum depth
+
+### Depth-Limited Search
+- DFS with depth limit l
+- **Complete**: No (if l < d)
+- **Optimal**: No
+- **Time**: O(b^l), Space: O(bl)
+
+### Iterative Deepening Search
+- Run depth-limited search with increasing limits
+- **Complete**: Yes
+- **Optimal**: Yes (unit costs)
+- **Time**: O(b^d), Space: O(bd)
+
+## 3.5 Informed (Heuristic) Search Strategies
+
+### Best-First Search
+- Expand node with lowest evaluation function f(n)
+- **Greedy best-first**: f(n) = h(n) - estimated cost to goal
+- **A***: f(n) = g(n) + h(n) - path cost + heuristic
+
+### A* Search Properties
+- **Complete**: Yes (admissible heuristic)
+- **Optimal**: Yes (admissible + consistent heuristic)
+- **Time/Space**: Exponential, but often much better
+
+### Heuristic Functions
+- **Admissible**: h(n) ≤ h*(n) - never overestimates
+- **Consistent**: h(n) ≤ c(n,a,n') + h(n') - triangle inequality
+- **Dominance**: Better heuristics dominate worse ones
+
+### Examples
+- **8-puzzle**: Manhattan distance, misplaced tiles
+- **Route finding**: Straight-line distance
+- **Sliding puzzles**: Pattern database heuristics
+
+## 3.6 Heuristic Functions
+
+### Constructing Heuristics
+- **Problem relaxation**: Remove constraints
+- **Pattern databases**: Precompute costs for subproblems
+- **Landmarks**: Key points that must be achieved
+- **Machine learning**: Learn heuristics from experience
+
+### Effective Heuristic Design
+- **Admissibility**: Never overestimate true cost
+- **Informativeness**: Better heuristics reduce search effort
+- **Computational cost**: Heuristic evaluation should be fast
+
+## 3.7 Summary
+
+- Problem-solving agents use search to find action sequences
+- Uninformed search: BFS, DFS, iterative deepening
+- Informed search: A* with admissible heuristics
+- Heuristics dramatically improve search performance
+- Choice depends on problem characteristics and available information
+
+Key insight: The right search algorithm depends on problem properties like state space size, solution depth, and available heuristic information.

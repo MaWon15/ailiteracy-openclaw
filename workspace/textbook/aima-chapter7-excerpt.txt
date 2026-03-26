@@ -1,0 +1,146 @@
+# Artificial Intelligence: A Modern Approach (4th Edition)
+# Chapter 7: Logical Agents - Key Excerpts
+
+## 7.1 Knowledge-Based Agents
+
+### Knowledge Base (KB)
+A set of sentences in a formal language, representing facts about the world.
+
+### Inference
+The process of deriving new sentences from existing ones.
+
+### Declarative vs Procedural Knowledge
+- **Declarative**: What is true (facts, rules)
+- **Procedural**: How to do things (algorithms, procedures)
+
+### Knowledge-Based Agent Architecture
+1. **Tell**: Add new sentences to KB
+2. **Ask**: Query what is known
+3. **Sensor**: Provide percepts
+4. **Actuator**: Execute actions
+5. **Reasoning**: Infer new knowledge
+
+## 7.2 The Wumpus World
+
+### Environment Description
+- 4x4 grid with pits, wumpus, gold
+- Agent starts at [1,1], facing right
+- Actions: Forward, TurnLeft, TurnRight, Grab, Shoot, Climb
+- Percepts: [Stench, Breeze, Glitter, Bump, Scream]
+
+### Knowledge Representation
+- **Propositional Logic**: Facts about specific locations
+- **Rules**: If there's a breeze, adjacent square has pit
+- **Inference**: Deduce safe/unsafe squares
+
+### Example Rules
+- B1,1 → P1,2 ∨ P2,1 (Breeze at [1,1] means pit at [1,2] or [2,1])
+- ¬P1,1 (No pit at starting square)
+- etc.
+
+## 7.3 Logic
+
+### Propositional Logic
+- **Syntax**: Atomic sentences, connectives (¬, ∧, ∨, →, ↔)
+- **Semantics**: Truth values, truth tables
+- **Inference**: Rules for deriving conclusions
+
+### First-Order Logic (FOL)
+- **Objects**: People, houses, numbers, etc.
+- **Relations**: Brother, OnTop, LargerThan
+- **Functions**: Father, Plus, BestFriend
+- **Quantifiers**: ∀ (forall), ∃ (exists)
+
+### Example FOL Sentences
+- ∀x King(x) ∧ Greedy(x) → Evil(x)
+- ∃x Crown(x) ∧ OnHead(x, John)
+- ∀x ∀y (Knows(x, y) → Knows(y, x))  [False assumption]
+
+## 7.4 Propositional Logic: A Very Simple Logic
+
+### Syntax
+- **Atomic sentences**: Single propositions (P, Q, R, etc.)
+- **Complex sentences**: Built with connectives
+- **Literals**: Atomic sentences or their negations
+
+### Semantics
+- **Model**: Assignment of truth values to propositions
+- **Satisfiability**: Exists model where sentence is true
+- **Validity**: True in all models
+- **Entailment**: Every model of KB is model of sentence
+
+### Truth Tables
+Define meaning of connectives:
+- ¬P is true iff P is false
+- P ∧ Q is true iff both P and Q are true
+- P ∨ Q is true iff at least one of P and Q is true
+- P → Q is true iff P false or Q true
+- P ↔ Q is true iff P and Q have same truth value
+
+## 7.5 Propositional Theorem Proving
+
+### Inference Rules
+- **Modus Ponens**: (P → Q), P ⊨ Q
+- **And Elimination**: P ∧ Q ⊨ P
+- **And Introduction**: P, Q ⊨ P ∧ Q
+- **Resolution**: (P ∨ Q), (¬P ∨ R) ⊨ Q ∨ R
+
+### Resolution Algorithm
+1. Convert to CNF (Conjunctive Normal Form)
+2. Apply resolution rule until contradiction or no new clauses
+3. If contradiction found, original sentence is entailed
+
+### Forward Chaining
+- Start with known facts
+- Apply rules to derive new facts
+- Continue until query answered or no progress
+
+### Backward Chaining
+- Start with query (goal)
+- Find rules that could conclude the goal
+- Recursively prove premises
+
+## 7.6 Effective Propositional Model Checking
+
+### Truth Table Enumeration
+- List all possible models
+- Check if KB entails query
+- Time: O(2^n) - exponential in number of propositions
+
+### DPLL Algorithm
+- Modern SAT solver approach
+- Early termination, pure literal elimination, unit propagation
+- Much faster than naive enumeration in practice
+
+### WalkSAT
+- Local search for satisfiability
+- Flip variable values to reduce unsatisfied clauses
+- Good for large, random problems
+
+## 7.7 Agents Based on Propositional Logic
+
+### Knowledge Base Construction
+- **Percept sentences**: Represent current percepts
+- **Action sentences**: Represent actions taken
+- **Transition sentences**: How world changes with actions
+
+### Inference for Action Selection
+- Use logical inference to determine safe/best actions
+- Combine current knowledge with possible action outcomes
+- Choose action that achieves goals while maintaining safety
+
+### Limitations
+- **Expressiveness**: Cannot represent general statements
+- **Efficiency**: Inference can be computationally expensive
+- **Uncertainty**: No built-in handling of uncertainty
+
+## 7.8 Summary
+
+- Knowledge-based agents maintain and use knowledge bases
+- Logic provides formal languages for knowledge representation
+- Propositional logic is simple but limited
+- First-order logic is more expressive
+- Inference algorithms derive new knowledge from existing knowledge
+- Logical agents can solve complex reasoning problems
+
+Key insight: Logic provides a foundation for representing and reasoning about knowledge, enabling agents to make informed decisions based on what they know about the world.
