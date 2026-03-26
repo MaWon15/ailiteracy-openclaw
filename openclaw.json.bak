@@ -1,6 +1,7 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.3.2",
+<<<<<<< Updated upstream
     "lastTouchedAt": "2026-03-26T17:21:04.162Z"
   },
   "wizard": {
@@ -8,23 +9,33 @@
     "lastRunVersion": "2026.3.2",
     "lastRunCommand": "onboard",
     "lastRunMode": "local"
+=======
+    "lastTouchedAt": "2026-03-26T17:53:07.465Z"
+>>>>>>> Stashed changes
   },
   "auth": {
     "profiles": {
       "openai:default": {
         "provider": "openai",
         "mode": "api_key"
+<<<<<<< Updated upstream
       },
       "openai-codex:default": {
         "provider": "openai-codex",
         "mode": "oauth"
+=======
+>>>>>>> Stashed changes
       }
     }
   },
   "agents": {
     "defaults": {
       "model": {
+<<<<<<< Updated upstream
         "primary": "openai-codex/gpt-5.3-codex"
+=======
+        "primary": "openai/gpt-5.1-codex"
+>>>>>>> Stashed changes
       },
       "models": {
         "openai/gpt-5.1-codex": {
@@ -76,18 +87,18 @@
       "streaming": "off",
       "dmPolicy": "disabled",
       "guilds": {
-        "${DISCORD_GUILD_ID}": {
+        "1458953849854365738": {
           "requireMention": false,
           "channels": {
-            "${INFO_ANNOUNCEMENTS_CHANNEL_ID}": {
+            "1486739120515711017": {
               "allow": true,
               "requireMention": false
             },
-            "${ACTIVE_TOPICS_CATEGORY_ID}": {
+            "1486739225071190289": {
               "allow": true,
               "requireMention": false
             },
-            "${ARCHIVED_CATEGORY_ID}": {
+            "1486739259854557346": {
               "allow": true,
               "requireMention": false
             }

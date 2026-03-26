@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "socket": {
+    "path": "/Users/stevedang/Documents/C++/ailiteracy-openclaw/.openclaw/exec-approvals.sock",
+    "token": "ZiblzoFTngLH0CwYy3eUSzS4YTWf9aUh"
+  },
+  "defaults": {},
+  "agents": {}
+}

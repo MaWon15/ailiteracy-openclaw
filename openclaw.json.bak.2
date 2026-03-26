@@ -1,4 +1,5 @@
 {
+<<<<<<< Updated upstream
   "meta": {
     "lastTouchedVersion": "2026.3.2",
     "lastTouchedAt": "2026-03-26T17:01:05.051Z"
@@ -25,6 +26,14 @@
       "compaction": {
         "mode": "safeguard"
       }
+=======
+  "gateway": {
+    "mode": "local"
+  },
+  "agents": {
+    "defaults": {
+      "workspace": "./workspace"
+>>>>>>> Stashed changes
     },
     "list": [
       {
@@ -38,9 +47,12 @@
       }
     ]
   },
+<<<<<<< Updated upstream
   "tools": {
     "profile": "messaging"
   },
+=======
+>>>>>>> Stashed changes
   "bindings": [
     {
       "agentId": "my_agent",
@@ -49,6 +61,7 @@
       }
     }
   ],
+<<<<<<< Updated upstream
   "commands": {
     "native": "auto",
     "nativeSkills": "auto",
@@ -58,12 +71,17 @@
   "session": {
     "dmScope": "per-channel-peer"
   },
+=======
+>>>>>>> Stashed changes
   "channels": {
     "discord": {
       "enabled": true,
       "token": "${DISCORD_TOKEN}",
+<<<<<<< Updated upstream
       "groupPolicy": "allowlist",
       "streaming": "off",
+=======
+>>>>>>> Stashed changes
       "dmPolicy": "disabled",
       "guilds": {
         "${DISCORD_GUILD_ID}": {
@@ -82,6 +100,7 @@
               "requireMention": false
             }
           }
+<<<<<<< Updated upstream
         },
         "discord-guild-id": {
           "channels": {
@@ -95,12 +114,15 @@
               "allow": true
             }
           }
+=======
+>>>>>>> Stashed changes
         }
       },
       "threadBindings": {
         "enabled": true
       }
     }
+<<<<<<< Updated upstream
   },
   "gateway": {
     "port": 18789,
@@ -114,5 +136,7 @@
       "mode": "off",
       "resetOnExit": false
     }
+=======
+>>>>>>> Stashed changes
   }
 }

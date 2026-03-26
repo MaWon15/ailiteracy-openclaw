@@ -1,7 +1,14 @@
 {
   "version": 1,
+<<<<<<< Updated upstream
   "deviceId": "ee651f855f0df9f8f2c50ef08266e5d4c512dc66659ac871013e67cb9cbc4548",
   "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAtGo51g2Lbxngf4PMQQw57gz8EGVUoRrJ4rZEqzA3pyE=\n-----END PUBLIC KEY-----\n",
   "privateKeyPem": "-----BEGIN PRIVATE KEY-----\nMC4CAQAwBQYDK2VwBCIEIADrH369nnVGwuAQGUGGCseeE+klEMb3c4ReyEioGBSJ\n-----END PRIVATE KEY-----\n",
   "createdAtMs": 1774544405556
+=======
+  "deviceId": "7fc66ac2075e6cefc64b0d03f544e3f222b0c6805547f8301dddc36d701830c4",
+  "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA/qkAjUumxgBZ+Az4IDhpiekfnnckfYKsFp3q/E6KMxE=\n-----END PUBLIC KEY-----\n",
+  "privateKeyPem": "-----BEGIN PRIVATE KEY-----\nMC4CAQAwBQYDK2VwBCIEIFr3F9h/8X78YtSALxT1majgqALbyZjFtNQQMWIlPnXk\n-----END PRIVATE KEY-----\n",
+  "createdAtMs": 1774547543268
+>>>>>>> Stashed changes
 }

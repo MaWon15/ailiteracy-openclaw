@@ -9,6 +9,7 @@
         "provider": "default",
         "id": "OPENAI_API_KEY"
       }
+<<<<<<< Updated upstream
     },
     "openai-codex:default": {
       "type": "oauth",
@@ -17,6 +18,8 @@
       "refresh": "rt_j6FBq3DKMecxS2sSBhv0EmLD67dSwegpv0Lj0y4UZe8.Q9iRj-EGk1m6ALFNp2-IJ1b4BczakQNZ7cLbERcBPqg",
       "expires": 1775409640200,
       "accountId": "f0ce4d50-b86b-4cb9-8e96-3fcad20cf26d"
+=======
+>>>>>>> Stashed changes
     }
   }
 }

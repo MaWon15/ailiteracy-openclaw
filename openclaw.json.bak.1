@@ -1,4 +1,5 @@
 {
+<<<<<<< Updated upstream
   "meta": {
     "lastTouchedVersion": "2026.3.2",
     "lastTouchedAt": "2026-03-26T17:02:11.859Z"
@@ -28,6 +29,11 @@
         }
       },
       "workspace": "/Users/stevedang/Documents/C++/ailiteracy-openclaw/workspace",
+=======
+  "agents": {
+    "defaults": {
+      "workspace": "./workspace",
+>>>>>>> Stashed changes
       "compaction": {
         "mode": "safeguard"
       }
@@ -44,9 +50,12 @@
       }
     ]
   },
+<<<<<<< Updated upstream
   "tools": {
     "profile": "messaging"
   },
+=======
+>>>>>>> Stashed changes
   "bindings": [
     {
       "agentId": "my_agent",
@@ -61,14 +70,18 @@
     "restart": true,
     "ownerDisplay": "raw"
   },
+<<<<<<< Updated upstream
   "session": {
     "dmScope": "per-channel-peer"
   },
+=======
+>>>>>>> Stashed changes
   "channels": {
     "discord": {
       "enabled": true,
       "token": "${DISCORD_TOKEN}",
       "groupPolicy": "allowlist",
+<<<<<<< Updated upstream
       "streaming": "off",
       "dmPolicy": "disabled",
       "guilds": {
@@ -84,10 +97,27 @@
               "requireMention": false
             },
             "${ARCHIVED_CATEGORY_ID}": {
+=======
+      "dmPolicy": "disabled",
+      "guilds": {
+        "1458953849854365738": {
+          "requireMention": false,
+          "channels": {
+            "1486739120515711017": {
+              "allow": true,
+              "requireMention": false
+            },
+            "1486739225071190289": {
+              "allow": true,
+              "requireMention": false
+            },
+            "1486739259854557346": {
+>>>>>>> Stashed changes
               "allow": true,
               "requireMention": false
             }
           }
+<<<<<<< Updated upstream
         },
         "discord-guild-id": {
           "channels": {
@@ -101,10 +131,13 @@
               "allow": true
             }
           }
+=======
+>>>>>>> Stashed changes
         }
       },
       "threadBindings": {
         "enabled": true
+<<<<<<< Updated upstream
       }
     }
   },
@@ -120,5 +153,21 @@
       "mode": "off",
       "resetOnExit": false
     }
+=======
+      },
+      "streaming": "off"
+    }
+  },
+  "gateway": {
+    "mode": "local",
+    "auth": {
+      "mode": "token",
+      "token": "e602c3556a619387eb4705d1c11964777d500cb600bd9529"
+    }
+  },
+  "meta": {
+    "lastTouchedVersion": "2026.3.2",
+    "lastTouchedAt": "2026-03-17T07:49:56.573Z"
+>>>>>>> Stashed changes
   }
 }
