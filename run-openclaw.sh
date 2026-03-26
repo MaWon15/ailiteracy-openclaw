@@ -1,4 +1,10 @@
 #!/bin/bash
+set -a
+if [ -f .env ]; then
+	source .env
+fi
+set +a
+
 export OPENCLAW_HOME="$(pwd)"
 export OPENCLAW_CONFIG_PATH="$(pwd)/openclaw.json"
 
