@@ -1,11 +1,7 @@
 {
-<<<<<<< Updated upstream
-  "lastCheckedAt": "2026-03-26T17:04:41.632Z",
-=======
-  "lastCheckedAt": "2026-03-26T17:45:23.994Z",
->>>>>>> Stashed changes
-  "lastAvailableVersion": "2026.3.24",
+  "lastCheckedAt": "2026-03-30T20:27:50.580Z",
+  "lastAvailableVersion": "2026.3.28",
   "lastAvailableTag": "latest",
-  "lastNotifiedVersion": "2026.3.24",
+  "lastNotifiedVersion": "2026.3.28",
   "lastNotifiedTag": "latest"
 }

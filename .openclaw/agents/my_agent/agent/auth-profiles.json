@@ -1,6 +1,14 @@
 {
   "version": 1,
   "profiles": {
+    "openai-codex:default": {
+      "type": "oauth",
+      "provider": "openai-codex",
+      "access": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjE5MzQ0ZTY1LWJiYzktNDRkMS1hOWQwLWY5NTdiMDc5YmQwZSIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfRU1vYW1FRVo3M2YwQ2tYYVhwN2hyYW5uIiwiZXhwIjoxNzc1NzY2MzY3LCJodHRwczovL2FwaS5vcGVuYWkuY29tL2F1dGgiOnsiY2hhdGdwdF9hY2NvdW50X2lkIjoiZjBjZTRkNTAtYjg2Yi00Y2I5LThlOTYtM2ZjYWQyMGNmMjZkIiwiY2hhdGdwdF9hY2NvdW50X3VzZXJfaWQiOiJ1c2VyLVBQYmFkNGNTM1NlQ3VPekNPY1VwWVJpQl9fZjBjZTRkNTAtYjg2Yi00Y2I5LThlOTYtM2ZjYWQyMGNmMjZkIiwiY2hhdGdwdF9jb21wdXRlX3Jlc2lkZW5jeSI6Im5vX2NvbnN0cmFpbnQiLCJjaGF0Z3B0X3BsYW5fdHlwZSI6InBsdXMiLCJjaGF0Z3B0X3VzZXJfaWQiOiJ1c2VyLVBQYmFkNGNTM1NlQ3VPekNPY1VwWVJpQiIsImxvY2FsaG9zdCI6dHJ1ZSwidXNlcl9pZCI6InVzZXItUFBiYWQ0Y1MzU2VDdU96Q09jVXBZUmlCIn0sImh0dHBzOi8vYXBpLm9wZW5haS5jb20vcHJvZmlsZSI6eyJlbWFpbCI6InN0ZXZlZGFuZzAxMDVAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWV9LCJpYXQiOjE3NzQ5MDIzNjYsImlzcyI6Imh0dHBzOi8vYXV0aC5vcGVuYWkuY29tIiwianRpIjoiMGNhNjMxZTMtOGQ2OC00ZDExLWE2ZTMtNzc5YWI4YjM4NjZiIiwibmJmIjoxNzc0OTAyMzY2LCJwd2RfYXV0aF90aW1lIjoxNzc0OTAyMzY1NzI4LCJzY3AiOlsib3BlbmlkIiwicHJvZmlsZSIsImVtYWlsIiwib2ZmbGluZV9hY2Nlc3MiXSwic2Vzc2lvbl9pZCI6ImF1dGhzZXNzX2Q2aHR4SWJhMlA4TXcwTVJWRmtkWEhUUCIsInNsIjp0cnVlLCJzdWIiOiJnb29nbGUtb2F1dGgyfDEwNTIzMTQwMjUzNDMzODk4Nzc2MyJ9.5A4oyYrQpb1smSaqd3427x2fT-w5orCePKHWEXLGblGpWs489ky03P2jvTIE6q-hbWC9IfFQxTV_wBeE0_z533Ao9F8esaHq_zw9wVQPp-uzsKR_iO3LqiZpJF7Dznov1d72Qg-YcuDH7-iNKlOopHWwzkAsPqPpxPKGILpQjYcDZVcWYQVJmulAiWs5KH__nGr29m73bnBKcdFddfatqBMhbncl3sfGQ21MAzoGFR9e0lENdQjQazeM06rtlOXtMJ4olGo_s8X7SqlNHUgwkSmzal1tGq6EMlDBfn31Huewu5WY-8DIF6ol8K5xHAlAsLyYYA0P9bJMw8cN5trxM2DVzus6nGusFFXQxnQwv4k9q08u8cvcIZAxanCQHz1fWNL-0McZyNA-ELh-MZh6o9t4X2i1Bir2FyHcGHhvGT4TXWM45e976AGJtnogNdCpQBhWExiCos4Uobep__69oAuL68t57X1XrvVNB8hXMySVZNVZI9Nmk9Ir_SHq0PWfhdsHeITMmAt-n2hWc_iHa9NWm_4I1ewTfWx-DnxfDDGwf3W4_rORE278xfYhoyNc8UA3AlDPIuc7Rs3-uPQV6v3ltUnSwjxNRI1T3koHUZzqzul31FKH2N9ACv7dKWZxWeTyysYnLQ5moROZdmdKWq-_oAQgvK4lVXp2dwiDcuY",
+      "refresh": "rt_T1QET2VfPtIeGVicV-6Cfl7Ycy3raAA33TqK4oYY0YI.befQq8HOuUCeZ4pCNFZzCe9NXZuc3E9dorg76UrqXbI",
+      "expires": 1775766366756,
+      "accountId": "f0ce4d50-b86b-4cb9-8e96-3fcad20cf26d"
+    },
     "openai:default": {
       "type": "api_key",
       "provider": "openai",
@@ -15,6 +23,10 @@
     "openai:default": {
       "errorCount": 0,
       "lastUsed": 1774548131625
+    },
+    "openai-codex:default": {
+      "errorCount": 0,
+      "lastUsed": 1774902529448
     }
   }
 }
