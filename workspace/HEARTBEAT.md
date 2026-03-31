@@ -1,5 +1,8 @@
 # HEARTBEAT.md
 
-# Keep this file empty (or with only comments) to skip heartbeat API calls.
+# Periodic and startup tasks for the agent.
 
-# Add tasks below when you want the agent to check something periodically.
+## On Startup
+- Send a brief greeting to the active discussion channel when you first come online:
+  > 🦞 Hey everyone! This is Steve-AI-Agent online and ready to discuss.
+- Only send this greeting once per session. Do not repeat it on subsequent heartbeats.
