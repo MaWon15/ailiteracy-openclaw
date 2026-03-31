@@ -1,4 +1,4 @@
 # Identity
 
-Name: Carbon-Based Caleb
-Emoji: :lobster:
+Name: SD - Bot
+Emoji: :lobster: 
