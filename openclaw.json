@@ -76,18 +76,14 @@
       "streaming": "off",
       "dmPolicy": "disabled",
       "guilds": {
-        "1458953849854365738": {
+        "1478915631016448020": {
           "requireMention": false,
           "channels": {
-            "1486739120515711017": {
+            "1480106512813654036": {
               "allow": true,
               "requireMention": false
             },
-            "1486739225071190289": {
-              "allow": true,
-              "requireMention": false
-            },
-            "1486739259854557346": {
+            "1479933418966880318": {
               "allow": true,
               "requireMention": false
             }
