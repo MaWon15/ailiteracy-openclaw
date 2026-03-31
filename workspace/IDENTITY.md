@@ -1,4 +1,4 @@
 # Identity
 
 Name: SD - Bot
-Emoji: :lobster: 
+Emoji: :gear: 
