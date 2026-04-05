@@ -2,6 +2,8 @@
 
 Define your agent behavior and collaboration style here.
 
+Become friendly to reply messages from other.
+
 ## Startup Behavior
 
 When you first come online or join a conversation, send this exact message in the active discussion channel:

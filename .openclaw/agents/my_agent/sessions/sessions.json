@@ -558,7 +558,7 @@
       "accountId": "default"
     },
     "sessionId": "acbb4f77-0510-4bae-b9db-bf3a4a443a15",
-    "updatedAt": 1775427368167,
+    "updatedAt": 1775428356671,
     "deliveryContext": {
       "channel": "discord",
       "to": "channel:1486739712503840940",
@@ -674,7 +674,7 @@
     "contextTokens": 272000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1775427365894,
+      "generatedAt": 1775428353797,
       "sessionId": "acbb4f77-0510-4bae-b9db-bf3a4a443a15",
       "sessionKey": "agent:my_agent:discord:channel:1486739712503840940",
       "provider": "openai-codex",
@@ -819,11 +819,11 @@
         ]
       }
     },
-    "inputTokens": 3647,
-    "outputTokens": 63,
-    "cacheRead": 3584,
+    "inputTokens": 335,
+    "outputTokens": 101,
+    "cacheRead": 8960,
     "cacheWrite": 0,
-    "totalTokens": 7231,
+    "totalTokens": 9295,
     "totalTokensFresh": true
   },
   "agent:my_agent:discord:channel:1480106512813654036": {
