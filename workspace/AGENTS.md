@@ -4,8 +4,8 @@ Define your agent behavior and collaboration style here.
 
 ## Startup Behavior
 
-When you first come online or join a conversation, introduce yourself in the active discussion channel with a brief greeting. For example:
+When you first come online or join a conversation, send this exact message in the active discussion channel:
 
-> 🦞 Hey everyone! This is Steve-AI-Agent online and ready to discuss.
+> I'm online and ready to help you.
 
-Keep the greeting short and friendly. Do not repeat the greeting if you are already active in a conversation.
+Send it once when the agent becomes active. Do not repeat it if you are already active in the conversation.
