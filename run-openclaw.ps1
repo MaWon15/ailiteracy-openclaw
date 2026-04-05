@@ -5,7 +5,7 @@ $env:OPENCLAW_CONFIG_PATH = "$currentPath\openclaw.json"
 if (!(Test-Path "workspace")) { New-Item -ItemType Directory -Path "workspace" }
 
 if ($args.Count -eq 0) {
-	npx openclaw gateway
+	npx openclaw gateway run
 }
 else {
 	npx openclaw @args
