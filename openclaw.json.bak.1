@@ -1,10 +1,10 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.3.2",
-    "lastTouchedAt": "2026-03-26T17:53:16.782Z"
+    "lastTouchedAt": "2026-04-07T17:16:03.631Z"
   },
   "wizard": {
-    "lastRunAt": "2026-03-26T17:53:16.778Z",
+    "lastRunAt": "2026-04-07T17:16:03.626Z",
     "lastRunVersion": "2026.3.2",
     "lastRunCommand": "onboard",
     "lastRunMode": "local"
@@ -14,13 +14,17 @@
       "openai:default": {
         "provider": "openai",
         "mode": "api_key"
+      },
+      "openai-codex:default": {
+        "provider": "openai-codex",
+        "mode": "oauth"
       }
     }
   },
   "agents": {
     "defaults": {
       "model": {
-        "primary": "openai/gpt-5.1-codex"
+        "primary": "openai-codex/gpt-5.3-codex"
       },
       "models": {
         "openai/gpt-5.1-codex": {
@@ -72,33 +76,20 @@
       "streaming": "off",
       "dmPolicy": "disabled",
       "guilds": {
-        "1458953849854365738": {
+        "1478915631016448020": {
           "requireMention": false,
           "channels": {
-            "1486739120515711017": {
+            "1480106512813654036": {
               "allow": true,
               "requireMention": false
             },
-            "1486739225071190289": {
+            "1478915632723398961": {
               "allow": true,
               "requireMention": false
             },
-            "1486739259854557346": {
+            "1479995367754960946": {
               "allow": true,
               "requireMention": false
-            }
-          }
-        },
-        "discord-guild-id": {
-          "channels": {
-            "info-announcements-channel-id": {
-              "allow": true
-            },
-            "active-topics-category-id": {
-              "allow": true
-            },
-            "archived-category-id": {
-              "allow": true
             }
           }
         }
