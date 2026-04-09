@@ -1,7 +1,7 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.3.2",
-    "lastTouchedAt": "2026-04-09T17:46:11.170Z"
+    "lastTouchedAt": "2026-04-09T18:03:48.654Z"
   },
   "wizard": {
     "lastRunAt": "2026-04-09T17:09:41.238Z",
@@ -86,9 +86,10 @@
       "groupPolicy": "allowlist",
       "streaming": "off",
       "dmPolicy": "disabled",
+      "allowFrom": [],
       "guilds": {
         "1478915631016448020": {
-          "requireMention": false,
+          "requireMention": true,
           "channels": {
             "1480106512813654036": {
               "allow": true,

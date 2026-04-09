@@ -1,7 +1,7 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.3.2",
-    "lastTouchedAt": "2026-04-09T17:46:07.962Z"
+    "lastTouchedAt": "2026-04-09T17:46:11.170Z"
   },
   "wizard": {
     "lastRunAt": "2026-04-09T17:09:41.238Z",
@@ -51,7 +51,8 @@
             "apply_patch",
             "write",
             "edit",
-            "web_search"
+            "web_search",
+            "web_fetch"
           ]
         }
       }
