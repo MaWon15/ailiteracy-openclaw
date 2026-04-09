@@ -1,10 +1,10 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.3.2",
-    "lastTouchedAt": "2026-04-09T17:08:16.894Z"
+    "lastTouchedAt": "2026-04-09T17:19:53.232Z"
   },
   "wizard": {
-    "lastRunAt": "2026-04-09T17:08:16.889Z",
+    "lastRunAt": "2026-04-09T17:09:41.238Z",
     "lastRunVersion": "2026.3.2",
     "lastRunCommand": "onboard",
     "lastRunMode": "local"
@@ -24,7 +24,7 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "openai/gpt-5.1-codex"
+        "primary": "openai-codex/gpt-5.3-codex"
       },
       "models": {
         "openai/gpt-5.1-codex": {
@@ -72,6 +72,7 @@
     "discord": {
       "enabled": true,
       "token": "${DISCORD_TOKEN}",
+      "allowBots": true,
       "groupPolicy": "allowlist",
       "streaming": "off",
       "dmPolicy": "disabled",
@@ -96,6 +97,13 @@
       },
       "threadBindings": {
         "enabled": true
+      },
+      "ackReactionScope": "group-mentions",
+      "accounts": {
+        "custom-1": {
+          "groupPolicy": "allowlist",
+          "streaming": "off"
+        }
       }
     }
   },
