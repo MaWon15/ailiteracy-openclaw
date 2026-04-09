@@ -1,18 +1,22 @@
 {
   "agent:my_agent:main": {
     "sessionId": "40ae0dcf-af58-47a5-838a-8fa166cc2cf7",
-    "updatedAt": 1775754761999,
+    "updatedAt": 1775756539718,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
     "deliveryContext": {
-      "channel": "webchat"
+      "channel": "webchat",
+      "to": "heartbeat"
     },
     "lastChannel": "webchat",
     "origin": {
-      "provider": "webchat",
+      "provider": "heartbeat",
       "surface": "webchat",
-      "chatType": "direct"
+      "chatType": "direct",
+      "label": "heartbeat",
+      "from": "heartbeat",
+      "to": "heartbeat"
     },
     "sessionFile": "/Users/stevedang/Documents/C++/ailiteracy-openclaw/.openclaw/agents/my_agent/sessions/40ae0dcf-af58-47a5-838a-8fa166cc2cf7.jsonl",
     "compactionCount": 0,
@@ -120,7 +124,7 @@
     "contextTokens": 272000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1775754756555,
+      "generatedAt": 1775756535555,
       "sessionId": "40ae0dcf-af58-47a5-838a-8fa166cc2cf7",
       "sessionKey": "agent:my_agent:main",
       "provider": "openai-codex",
@@ -133,9 +137,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 15943,
+        "chars": 15929,
         "projectContextChars": 5245,
-        "nonProjectContextChars": 10698
+        "nonProjectContextChars": 10684
       },
       "injectedWorkspaceFiles": [
         {
@@ -230,13 +234,13 @@
       },
       "tools": {
         "listChars": 429,
-        "schemaChars": 5359,
+        "schemaChars": 8991,
         "entries": [
           {
             "name": "message",
             "summaryChars": 471,
-            "schemaChars": 4624,
-            "propertiesCount": 86
+            "schemaChars": 8256,
+            "propertiesCount": 87
           },
           {
             "name": "sessions_list",
@@ -265,12 +269,13 @@
         ]
       }
     },
-    "inputTokens": 5027,
-    "outputTokens": 201,
+    "inputTokens": 5584,
+    "outputTokens": 76,
     "cacheRead": 0,
     "cacheWrite": 0,
-    "totalTokens": 5027,
-    "totalTokensFresh": true
+    "totalTokens": 5584,
+    "totalTokensFresh": true,
+    "lastTo": "heartbeat"
   },
   "agent:my_agent:main-new": {
     "sessionId": "eeccdfb4-1a7a-49b4-aa2c-c55f4d5e5faa",
