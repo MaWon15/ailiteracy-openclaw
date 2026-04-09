@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "payload": {
+    "kind": "update",
+    "status": "skipped",
+    "ts": 1775755158542,
+    "sessionKey": "agent:my_agent:discord:channel:1478915632723398961",
+    "message": null,
+    "doctorHint": "Run: openclaw doctor --non-interactive",
+    "stats": {
+      "mode": "unknown",
+      "root": "/Users/stevedang/Documents/C++/ailiteracy-openclaw/node_modules/openclaw",
+      "before": {
+        "version": "2026.3.2"
+      },
+      "after": null,
+      "steps": [],
+      "reason": "not-git-install",
+      "durationMs": 724
+    }
+  }
+}

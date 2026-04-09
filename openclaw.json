@@ -1,10 +1,10 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.3.2",
-    "lastTouchedAt": "2026-04-07T17:18:21.247Z"
+    "lastTouchedAt": "2026-04-09T17:19:53.232Z"
   },
   "wizard": {
-    "lastRunAt": "2026-04-07T17:18:21.241Z",
+    "lastRunAt": "2026-04-09T17:09:41.238Z",
     "lastRunVersion": "2026.3.2",
     "lastRunCommand": "onboard",
     "lastRunMode": "local"
@@ -72,6 +72,7 @@
     "discord": {
       "enabled": true,
       "token": "${DISCORD_TOKEN}",
+      "allowBots": true,
       "groupPolicy": "allowlist",
       "streaming": "off",
       "dmPolicy": "disabled",
@@ -83,7 +84,7 @@
               "allow": true,
               "requireMention": true
             },
-            "1478915632723398961": { 
+            "1478915632723398961": {
               "allow": true,
               "requireMention": true
             },
@@ -96,6 +97,13 @@
       },
       "threadBindings": {
         "enabled": true
+      },
+      "ackReactionScope": "group-mentions",
+      "accounts": {
+        "custom-1": {
+          "groupPolicy": "allowlist",
+          "streaming": "off"
+        }
       }
     }
   },

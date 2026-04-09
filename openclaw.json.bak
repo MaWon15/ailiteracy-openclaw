@@ -1,10 +1,10 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.3.2",
-    "lastTouchedAt": "2026-04-07T17:18:11.004Z"
+    "lastTouchedAt": "2026-04-09T17:09:41.241Z"
   },
   "wizard": {
-    "lastRunAt": "2026-04-07T17:16:03.626Z",
+    "lastRunAt": "2026-04-09T17:09:41.238Z",
     "lastRunVersion": "2026.3.2",
     "lastRunCommand": "onboard",
     "lastRunMode": "local"
@@ -81,15 +81,15 @@
           "channels": {
             "1480106512813654036": {
               "allow": true,
-              "requireMention": false
+              "requireMention": true
             },
             "1478915632723398961": {
               "allow": true,
-              "requireMention": false
+              "requireMention": true
             },
             "1479995367754960946": {
               "allow": true,
-              "requireMention": false
+              "requireMention": true
             }
           }
         }
