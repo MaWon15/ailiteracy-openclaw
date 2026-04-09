@@ -3,8 +3,8 @@
   "payload": {
     "kind": "update",
     "status": "skipped",
-    "ts": 1775755158542,
-    "sessionKey": "agent:my_agent:discord:channel:1478915632723398961",
+    "ts": 1775756002930,
+    "sessionKey": "agent:my_agent:discord:channel:1479995367754960946",
     "message": null,
     "doctorHint": "Run: openclaw doctor --non-interactive",
     "stats": {
@@ -16,7 +16,7 @@
       "after": null,
       "steps": [],
       "reason": "not-git-install",
-      "durationMs": 724
+      "durationMs": 591
     }
   }
 }
