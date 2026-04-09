@@ -1,7 +1,7 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.3.2",
-    "lastTouchedAt": "2026-04-09T17:09:41.241Z"
+    "lastTouchedAt": "2026-04-09T17:45:32.835Z"
   },
   "wizard": {
     "lastRunAt": "2026-04-09T17:09:41.238Z",
@@ -44,6 +44,11 @@
         "workspace": "./workspace",
         "identity": {
           "name": "Carbon-Based Caleb"
+        },
+        "tools": {
+          "alsoAllow": [
+            "read"
+          ]
         }
       }
     ]
@@ -72,6 +77,7 @@
     "discord": {
       "enabled": true,
       "token": "${DISCORD_TOKEN}",
+      "allowBots": true,
       "groupPolicy": "allowlist",
       "streaming": "off",
       "dmPolicy": "disabled",
@@ -96,6 +102,13 @@
       },
       "threadBindings": {
         "enabled": true
+      },
+      "ackReactionScope": "group-mentions",
+      "accounts": {
+        "custom-1": {
+          "groupPolicy": "allowlist",
+          "streaming": "off"
+        }
       }
     }
   },
