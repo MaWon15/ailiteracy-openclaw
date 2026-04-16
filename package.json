@@ -11,7 +11,7 @@
     "logs": "powershell -Command \"Get-Content -Path ./state/logs/openclaw.log -Wait\"",
     "test:llm": "node scripts/test-qwen3.js",
     "studio": "npx openclaw-studio",
-    "gateway": "powershell -File ./run-openclaw.ps1",
+    "gateway": "node --input-type=module -e \"import { spawnSync } from 'node:child_process'; const win = process.platform === 'win32'; const command = win ? 'powershell' : 'bash'; const args = win ? ['-File', './run-openclaw.ps1'] : ['./run-openclaw.sh']; const result = spawnSync(command, args, { stdio: 'inherit' }); process.exit(result.status ?? 1);\"",
     "config:validate": "node -e \"const c=require('./openclaw.json');const p=c.models.providers;console.log('Default model:',c.agents.defaults.model.primary);Object.entries(p).forEach(([k,v])=>{console.log('Provider:',k,'→',v.baseUrl);fetch(v.baseUrl.replace(/\\/v1$/,'')).then(r=>console.log(' ',k,'reachable ('+r.status+')')).catch(e=>console.log(' ',k,'UNREACHABLE:',e.message))})\"",
     "config:backup": "node -e \"const fs=require('fs');const ts=new Date().toISOString().replace(/[:T]/g,'-').slice(0,19);fs.copyFileSync('openclaw.json','openclaw.json.bak.'+ts);console.log('Backed up to openclaw.json.bak.'+ts)\"",
     "env": "powershell -Command \"& ./run-openclaw.ps1 version\""

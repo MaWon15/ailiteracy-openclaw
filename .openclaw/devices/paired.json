@@ -104,5 +104,34 @@
     },
     "createdAtMs": 1775426893671,
     "approvedAtMs": 1775426893671
+  },
+  "3e0838613afb47adc1a379cab33a2114f3b13e378977e3aa3c023ca906a3f8a7": {
+    "deviceId": "3e0838613afb47adc1a379cab33a2114f3b13e378977e3aa3c023ca906a3f8a7",
+    "publicKey": "xI4s5utLmrDMMLrReuV1yAqNMLNO5-PjpA8WnED2P9s",
+    "platform": "darwin",
+    "clientId": "openclaw-probe",
+    "clientMode": "probe",
+    "role": "operator",
+    "roles": [
+      "operator"
+    ],
+    "scopes": [
+      "operator.read"
+    ],
+    "approvedScopes": [
+      "operator.read"
+    ],
+    "tokens": {
+      "operator": {
+        "token": "Hp3ayslkQ0Mg2GVWAAVOsykdIUWohXvkeirhWdnqOTk",
+        "role": "operator",
+        "scopes": [
+          "operator.read"
+        ],
+        "createdAtMs": 1776301519612
+      }
+    },
+    "createdAtMs": 1776301519612,
+    "approvedAtMs": 1776301519612
   }
 }
