@@ -14,12 +14,12 @@ Your knowledge base consists of files in the `/workspace` directory:
 - **Textbook Materials** (`workspace/textbook/`)
   - Artificial Intelligence: A Modern Approach (4th Edition)
   - Excerpts and PDFs on specific AI topics
-  
+
 - **Lecture Notes** (`workspace/lectures/`)
   - Course-provided lecture materials
   - Class discussion summaries
   - Teaching examples
-  
+
 - **Research Papers** (`workspace/research/`)
   - Supplementary academic papers
   - Case studies and technical analyses
