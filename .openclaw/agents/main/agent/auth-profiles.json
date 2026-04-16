@@ -12,7 +12,11 @@
     "openai:default": {
       "type": "api_key",
       "provider": "openai",
-      "key": "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"
+      "keyRef": {
+        "source": "env",
+        "provider": "default",
+        "id": "OPENAI_API_KEY"
+      }
     }
   }
 }
