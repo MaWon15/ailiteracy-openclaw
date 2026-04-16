@@ -874,18 +874,18 @@
       "chatType": "channel",
       "from": "discord:channel:1480106512813654036",
       "to": "channel:1480106512813654036",
-      "accountId": "default"
+      "accountId": "custom-1"
     },
     "sessionId": "24320fb4-6093-4b6b-b78f-c29842f23857",
-    "updatedAt": 1775585005546,
+    "updatedAt": 1776359907838,
     "deliveryContext": {
       "channel": "discord",
       "to": "channel:1480106512813654036",
-      "accountId": "default"
+      "accountId": "custom-1"
     },
     "lastChannel": "discord",
     "lastTo": "channel:1480106512813654036",
-    "lastAccountId": "default",
+    "lastAccountId": "custom-1",
     "systemSent": true,
     "abortedLastRun": false,
     "sessionFile": "/Users/stevedang/Documents/C++/ailiteracy-openclaw/.openclaw/agents/my_agent/sessions/24320fb4-6093-4b6b-b78f-c29842f23857.jsonl",
@@ -985,20 +985,17 @@
       ],
       "version": 0
     },
-    "authProfileOverride": "openai-codex:default",
-    "authProfileOverrideSource": "auto",
-    "authProfileOverrideCompactionCount": 0,
-    "modelProvider": "openai-codex",
-    "model": "gpt-5.3-codex",
-    "contextTokens": 272000,
+    "modelProvider": "openai",
+    "model": "gpt-5.1-codex",
+    "contextTokens": 400000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1775585003725,
+      "generatedAt": 1776359904684,
       "sessionId": "24320fb4-6093-4b6b-b78f-c29842f23857",
       "sessionKey": "agent:my_agent:discord:channel:1480106512813654036",
-      "provider": "openai-codex",
-      "model": "gpt-5.3-codex",
-      "workspaceDir": "/Users/stevedang/Documents/C++/ailiteracy-openclaw/workspace/workspace/workspace",
+      "provider": "openai",
+      "model": "gpt-5.1-codex",
+      "workspaceDir": "/Users/stevedang/Documents/C++/ailiteracy-openclaw/workspace",
       "bootstrapMaxChars": 20000,
       "bootstrapTotalMaxChars": 150000,
       "sandbox": {
@@ -1006,25 +1003,25 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 16065,
-        "projectContextChars": 5245,
-        "nonProjectContextChars": 10820
+        "chars": 16885,
+        "projectContextChars": 5928,
+        "nonProjectContextChars": 10957
       },
       "injectedWorkspaceFiles": [
         {
           "name": "AGENTS.md",
           "path": "/Users/stevedang/Documents/C++/ailiteracy-openclaw/workspace/AGENTS.md",
           "missing": false,
-          "rawChars": 390,
-          "injectedChars": 390,
+          "rawChars": 819,
+          "injectedChars": 819,
           "truncated": false
         },
         {
           "name": "SOUL.md",
           "path": "/Users/stevedang/Documents/C++/ailiteracy-openclaw/workspace/SOUL.md",
           "missing": false,
-          "rawChars": 2334,
-          "injectedChars": 2334,
+          "rawChars": 2330,
+          "injectedChars": 2330,
           "truncated": false
         },
         {
@@ -1039,8 +1036,8 @@
           "name": "IDENTITY.md",
           "path": "/Users/stevedang/Documents/C++/ailiteracy-openclaw/workspace/IDENTITY.md",
           "missing": false,
-          "rawChars": 66,
-          "injectedChars": 66,
+          "rawChars": 324,
+          "injectedChars": 324,
           "truncated": false
         },
         {
@@ -1102,9 +1099,27 @@
         ]
       },
       "tools": {
-        "listChars": 429,
-        "schemaChars": 8979,
+        "listChars": 627,
+        "schemaChars": 11544,
         "entries": [
+          {
+            "name": "read",
+            "summaryChars": 298,
+            "schemaChars": 392,
+            "propertiesCount": 4
+          },
+          {
+            "name": "edit",
+            "summaryChars": 129,
+            "schemaChars": 591,
+            "propertiesCount": 6
+          },
+          {
+            "name": "write",
+            "summaryChars": 127,
+            "schemaChars": 313,
+            "propertiesCount": 3
+          },
           {
             "name": "message",
             "summaryChars": 478,
@@ -1134,16 +1149,31 @@
             "summaryChars": 207,
             "schemaChars": 89,
             "propertiesCount": 2
+          },
+          {
+            "name": "web_search",
+            "summaryChars": 175,
+            "schemaChars": 895,
+            "propertiesCount": 6
+          },
+          {
+            "name": "web_fetch",
+            "summaryChars": 129,
+            "schemaChars": 374,
+            "propertiesCount": 3
           }
         ]
       }
     },
-    "inputTokens": 6450,
-    "outputTokens": 28,
-    "cacheRead": 2560,
+    "inputTokens": 10675,
+    "outputTokens": 92,
+    "cacheRead": 0,
     "cacheWrite": 0,
-    "totalTokens": 9010,
-    "totalTokensFresh": true
+    "totalTokens": 10675,
+    "totalTokensFresh": true,
+    "authProfileOverride": "openai:default",
+    "authProfileOverrideSource": "auto",
+    "authProfileOverrideCompactionCount": 0
   },
   "agent:my_agent:discord:channel:1479995367754960946": {
     "chatType": "channel",
@@ -1162,7 +1192,7 @@
       "accountId": "custom-1"
     },
     "sessionId": "0713e492-88cb-4eec-98fa-eb750b2416d8",
-    "updatedAt": 1775755242311,
+    "updatedAt": 1776360806621,
     "deliveryContext": {
       "channel": "discord",
       "to": "channel:1479995367754960946",
@@ -1270,19 +1300,16 @@
       ],
       "version": 0
     },
-    "authProfileOverride": "openai-codex:default",
-    "authProfileOverrideSource": "auto",
-    "authProfileOverrideCompactionCount": 0,
-    "modelProvider": "openai-codex",
-    "model": "gpt-5.3-codex",
-    "contextTokens": 272000,
+    "modelProvider": "openai",
+    "model": "gpt-5.1-codex",
+    "contextTokens": 400000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1775755237003,
+      "generatedAt": 1776360803578,
       "sessionId": "0713e492-88cb-4eec-98fa-eb750b2416d8",
       "sessionKey": "agent:my_agent:discord:channel:1479995367754960946",
-      "provider": "openai-codex",
-      "model": "gpt-5.3-codex",
+      "provider": "openai",
+      "model": "gpt-5.1-codex",
       "workspaceDir": "/Users/stevedang/Documents/C++/ailiteracy-openclaw/workspace",
       "bootstrapMaxChars": 20000,
       "bootstrapTotalMaxChars": 150000,
@@ -1291,25 +1318,25 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 16016,
-        "projectContextChars": 5245,
-        "nonProjectContextChars": 10771
+        "chars": 17443,
+        "projectContextChars": 6486,
+        "nonProjectContextChars": 10957
       },
       "injectedWorkspaceFiles": [
         {
           "name": "AGENTS.md",
           "path": "/Users/stevedang/Documents/C++/ailiteracy-openclaw/workspace/AGENTS.md",
           "missing": false,
-          "rawChars": 390,
-          "injectedChars": 390,
+          "rawChars": 1377,
+          "injectedChars": 1377,
           "truncated": false
         },
         {
           "name": "SOUL.md",
           "path": "/Users/stevedang/Documents/C++/ailiteracy-openclaw/workspace/SOUL.md",
           "missing": false,
-          "rawChars": 2334,
-          "injectedChars": 2334,
+          "rawChars": 2330,
+          "injectedChars": 2330,
           "truncated": false
         },
         {
@@ -1324,8 +1351,8 @@
           "name": "IDENTITY.md",
           "path": "/Users/stevedang/Documents/C++/ailiteracy-openclaw/workspace/IDENTITY.md",
           "missing": false,
-          "rawChars": 66,
-          "injectedChars": 66,
+          "rawChars": 324,
+          "injectedChars": 324,
           "truncated": false
         },
         {
@@ -1387,9 +1414,27 @@
         ]
       },
       "tools": {
-        "listChars": 429,
-        "schemaChars": 8979,
+        "listChars": 627,
+        "schemaChars": 11544,
         "entries": [
+          {
+            "name": "read",
+            "summaryChars": 298,
+            "schemaChars": 392,
+            "propertiesCount": 4
+          },
+          {
+            "name": "edit",
+            "summaryChars": 129,
+            "schemaChars": 591,
+            "propertiesCount": 6
+          },
+          {
+            "name": "write",
+            "summaryChars": 127,
+            "schemaChars": 313,
+            "propertiesCount": 3
+          },
           {
             "name": "message",
             "summaryChars": 478,
@@ -1419,16 +1464,31 @@
             "summaryChars": 207,
             "schemaChars": 89,
             "propertiesCount": 2
+          },
+          {
+            "name": "web_search",
+            "summaryChars": 175,
+            "schemaChars": 895,
+            "propertiesCount": 6
+          },
+          {
+            "name": "web_fetch",
+            "summaryChars": 129,
+            "schemaChars": 374,
+            "propertiesCount": 3
           }
         ]
       }
     },
-    "inputTokens": 14665,
-    "outputTokens": 163,
+    "inputTokens": 18414,
+    "outputTokens": 39,
     "cacheRead": 0,
     "cacheWrite": 0,
-    "totalTokens": 14665,
-    "totalTokensFresh": true
+    "totalTokens": 18414,
+    "totalTokensFresh": true,
+    "authProfileOverride": "openai:default",
+    "authProfileOverrideSource": "auto",
+    "authProfileOverrideCompactionCount": 0
   },
   "agent:my_agent:discord:channel:1478915632723398961": {
     "sessionId": "f9ab4d0b-e750-4e6e-ad03-ab654f7b9f15",

@@ -16,7 +16,7 @@ This guide explains how the three core automation components work together to cr
 [Professor Chuck's Post]
         ↓
    #announcements
-        ↓
+        ↓ 
     ↙️    ↘️
    
 Student Agent Core          (Monitors)
