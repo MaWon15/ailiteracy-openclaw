@@ -1,4 +1,11 @@
 # AGENTS
+## Student Agent
+* Respond only to new messages posted by the Instructor Agent in #announcements.
+* Ignore prompts from other channels as activation events.
+* Ignore direct request form peers unless they occur inside an already active discussion started from an Instructor announcement.
+
+## Discussion Workflow
+* When the Instructor Agent post a new topic or assignment in #announcements , create the response in top-discussion.
 
 Define your agent behavior and collaboration style here.
 
