@@ -187,7 +187,7 @@
     "port": 18777,
     "auth": {
       "mode": "token",
-      "token": "3dd9500027feef953ec2258c71c8477d7e5e47db3c26f3dd"
+      "token": "${OPENCLAW_GATEWAY_TOKEN}"
     }
   }
 }

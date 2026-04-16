@@ -5,8 +5,8 @@ const requiredEnvVars = [
   "OPENAI_API_KEY",
   "DISCORD_GUILD_ID",
   "INFO_ANNOUNCEMENTS_CHANNEL_ID",
-  "ACTIVE_TOPICS_CATEGORY_ID",
-  "ARCHIVED_CATEGORY_ID",
+  "TOPIC_DISCUSSION_ID",
+  "OPENCLAW_GATEWAY_TOKEN",
 ];
 
 const placeholderPatterns = [
@@ -54,6 +54,7 @@ function parseDotEnv(content) {
 function main() {
   const root = process.cwd();
   const errors = [];
+  const warnings = [];
 
   // Check required directories
   for (const dir of ["workspace", "agents", "shared"]) {
@@ -107,6 +108,38 @@ function main() {
         errors.push(`Env var ${key} in .env looks like a placeholder (${value}). Replace it with a real value.`);
       }
     }
+
+    const generalChannelId = env.GENERAL_ID || env.INFO_GENERAL_CHANNEL_ID;
+    if (generalChannelId == null || String(generalChannelId).trim() === "") {
+      errors.push("Missing required env var GENERAL_ID or INFO_GENERAL_CHANNEL_ID in .env.");
+    } else if (isObviousPlaceholder(generalChannelId)) {
+      errors.push(`General channel ID in .env looks like a placeholder (${generalChannelId}). Replace it with a real value.`);
+    }
+
+    const activeDiscordToken = env.DISCORD_TOKEN || env.DISCORD_BOT_TOKEN;
+    if (activeDiscordToken == null || String(activeDiscordToken).trim() === "") {
+      errors.push("Missing required env var DISCORD_TOKEN in .env.");
+    } else if (isObviousPlaceholder(activeDiscordToken)) {
+      errors.push(`Discord token in .env looks like a placeholder (${activeDiscordToken}). Replace it with a real value.`);
+    }
+
+    const roleSpecificTokens = [
+      "INSTRUCTOR_DISCORD_TOKEN",
+      "STUDENT_DISCORD_TOKEN",
+      "TA_DISCORD_TOKEN",
+    ];
+    const configuredRoleTokens = roleSpecificTokens.filter((key) => {
+      const value = env[key];
+      return value != null && String(value).trim() !== "" && !isObviousPlaceholder(value);
+    });
+
+    if (configuredRoleTokens.length > 0 && configuredRoleTokens.length < roleSpecificTokens.length) {
+      errors.push("Role-specific Discord tokens must either all be configured or all be omitted.");
+    }
+
+    if (configuredRoleTokens.length === 0) {
+      warnings.push("Role-specific Discord tokens are not set; openclaw_setup.json will not be usable until INSTRUCTOR_DISCORD_TOKEN, STUDENT_DISCORD_TOKEN, and TA_DISCORD_TOKEN are configured.");
+    }
   } else {
     errors.push("Missing .env file. Copy .env.example to .env and fill in your keys.");
   }
@@ -118,6 +151,13 @@ function main() {
     }
     console.error("\n[check] Fix the issues above, then run `npm run check` again.");
     process.exit(1);
+  }
+
+  if (warnings.length > 0) {
+    console.warn("\n[check] Setup warnings:\n");
+    for (const issue of warnings) {
+      console.warn(`- ${issue}`);
+    }
   }
 
   console.log("[check] Setup validation passed.");
