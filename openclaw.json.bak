@@ -1,12 +1,12 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.3.2",
-    "lastTouchedAt": "2026-04-16T17:14:46.656Z"
+    "lastTouchedAt": "2026-04-23T17:22:06.257Z"
   },
   "wizard": {
-    "lastRunAt": "2026-04-16T01:35:57.303Z",
+    "lastRunAt": "2026-04-23T17:22:06.252Z",
     "lastRunVersion": "2026.3.2",
-    "lastRunCommand": "onboard",
+    "lastRunCommand": "configure",
     "lastRunMode": "local"
   },
   "auth": {
@@ -24,7 +24,7 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "openai/gpt-5.1-codex"
+        "primary": "openai-codex/gpt-5.3-codex"
       },
       "models": {
         "openai/gpt-5.1-codex": {
@@ -124,7 +124,7 @@
     "bind": "loopback",
     "auth": {
       "mode": "token",
-      "token": "${OPENCLAW_GATEWAY_TOKEN}"
+      "token": "a898ce8bc0ef6d85ea92abfd792f67d0a6e89800d7700a52"
     },
     "tailscale": {
       "mode": "off",
