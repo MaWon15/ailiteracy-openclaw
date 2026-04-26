@@ -40,7 +40,7 @@
       {
         "id": "my_agent",
         "default": true,
-        "name": "Carbon-Based Caleb",
+        "name": "Steve's Agent Assistant",
         "workspace": "./workspace",
         "identity": {
           "name": "Carbon-Based Caleb"
