@@ -28,3 +28,9 @@
 ## Remote Ollama Connection
 
 - Connected to remote Ollama on Mac Studio (chucks-mac-studio). Initial connection may take 30-60 seconds.
+
+## Evaluation Note
+
+- During the final evaluation, the Instructor Agent asks direct questions in `topic-discussion` — not via `#announcements`.
+- The heartbeat's normal announcement-check loop is not the trigger for evaluation responses.
+- Evaluation responses are driven by AGENTS.md Evaluation Agent rules, not this heartbeat cycle.
