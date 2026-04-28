@@ -1,10 +1,10 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.3.2",
-    "lastTouchedAt": "2026-04-23T17:21:26.352Z"
+    "lastTouchedAt": "2026-04-23T17:44:00.019Z"
   },
   "wizard": {
-    "lastRunAt": "2026-04-23T17:21:26.345Z",
+    "lastRunAt": "2026-04-23T17:22:06.252Z",
     "lastRunVersion": "2026.3.2",
     "lastRunCommand": "configure",
     "lastRunMode": "local"
@@ -40,8 +40,8 @@
       {
         "id": "my_agent",
         "default": true,
-        "name": "Carbon-Based Caleb",
-        "workspace": "./workspace",
+        "name": "Steve's Agent Assistant",
+        "workspace": "./workspace/student",
         "identity": {
           "name": "Carbon-Based Caleb"
         },
@@ -124,11 +124,33 @@
     "bind": "loopback",
     "auth": {
       "mode": "token",
-      "token": "${OPENCLAW_GATEWAY_TOKEN}"
+      "token": "a898ce8bc0ef6d85ea92abfd792f67d0a6e89800d7700a52"
     },
     "tailscale": {
       "mode": "off",
       "resetOnExit": false
+    }
+  },
+  "plugins": {
+    "entries": {
+      "manifest": {
+        "enabled": true
+      }
+    },
+    "installs": {
+      "manifest": {
+        "source": "npm",
+        "spec": "manifest",
+        "installPath": "/Users/stevedang/.openclaw/extensions/manifest",
+        "version": "5.45.1",
+        "resolvedName": "manifest",
+        "resolvedVersion": "5.45.1",
+        "resolvedSpec": "manifest@5.45.1",
+        "integrity": "sha512-GLQXXic75vbLeaPxUMlp5K+rUpIiuSJc40dDdyycJLKXYwBoSmJVRu0ZQIfDCziKlvgCjA3XbNaP/xwSUEqsRA==",
+        "shasum": "cb5258f30092d8558fe10b7ea07c1ff323c6475b",
+        "resolvedAt": "2026-04-23T17:43:17.308Z",
+        "installedAt": "2026-04-23T17:43:59.987Z"
+      }
     }
   }
 }

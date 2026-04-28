@@ -1,12 +1,12 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.3.2",
-    "lastTouchedAt": "2026-04-23T17:44:00.019Z"
+    "lastTouchedAt": "2026-04-28T17:11:46.222Z"
   },
   "wizard": {
-    "lastRunAt": "2026-04-23T17:22:06.252Z",
+    "lastRunAt": "2026-04-28T17:11:46.181Z",
     "lastRunVersion": "2026.3.2",
-    "lastRunCommand": "configure",
+    "lastRunCommand": "onboard",
     "lastRunMode": "local"
   },
   "auth": {
@@ -41,7 +41,7 @@
         "id": "my_agent",
         "default": true,
         "name": "Steve's Agent Assistant",
-        "workspace": "./workspace",
+        "workspace": "./workspace/student",
         "identity": {
           "name": "Carbon-Based Caleb"
         },

@@ -67,9 +67,9 @@ function main() {
   // Check required files
   const requiredFiles = [
     "openclaw.json",
-    "workspace/AGENTS.md",
-    "workspace/IDENTITY.md",
-    "workspace/SOUL.md",
+    "workspace/student/AGENTS.md",
+    "workspace/student/IDENTITY.md",
+    "workspace/student/SOUL.md",
     "shared/schema.json",
   ];
 
