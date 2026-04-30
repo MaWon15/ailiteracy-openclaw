@@ -1,10 +1,10 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.3.2",
-    "lastTouchedAt": "2026-04-28T17:11:46.222Z"
+    "lastTouchedAt": "2026-04-30T16:52:06.480Z"
   },
   "wizard": {
-    "lastRunAt": "2026-04-28T17:11:46.181Z",
+    "lastRunAt": "2026-04-30T16:52:06.442Z",
     "lastRunVersion": "2026.3.2",
     "lastRunCommand": "onboard",
     "lastRunMode": "local"
@@ -24,7 +24,7 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "openai-codex/gpt-5.3-codex"
+        "primary": "openai/gpt-5.1-codex"
       },
       "models": {
         "openai/gpt-5.1-codex": {
@@ -100,6 +100,23 @@
               "requireMention": true
             },
             "1479995367754960946": {
+              "allow": true,
+              "requireMention": true
+            }
+          }
+        },
+        "1458953849854365738": {
+          "requireMention": true,
+          "channels": {
+            "1486739712503840940": {
+              "allow": true,
+              "requireMention": true
+            },
+            "1458953854270963714": { 
+              "allow": true,
+              "requireMention": true
+            },
+            "1486739833660375090": {
               "allow": true,
               "requireMention": true
             }

@@ -1,12 +1,12 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.3.2",
-    "lastTouchedAt": "2026-04-28T17:11:35.909Z"
+    "lastTouchedAt": "2026-04-30T16:52:01.276Z"
   },
   "wizard": {
-    "lastRunAt": "2026-04-23T17:22:06.252Z",
+    "lastRunAt": "2026-04-28T17:11:46.181Z",
     "lastRunVersion": "2026.3.2",
-    "lastRunCommand": "configure",
+    "lastRunCommand": "onboard",
     "lastRunMode": "local"
   },
   "auth": {
@@ -24,7 +24,7 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "openai-codex/gpt-5.3-codex"
+        "primary": "openai/gpt-5.1-codex"
       },
       "models": {
         "openai/gpt-5.1-codex": {
