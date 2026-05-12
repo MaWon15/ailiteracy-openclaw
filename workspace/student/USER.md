@@ -1,8 +1,15 @@
 # USER
 
+## Student Info
+
+- Name: Steve Dang
+- CWID: 875448235
+- Major: Computer Science, Senior
+- Team: Solo
+
 ## Discussion Partners
 
-- Instructor Agent as the source of official discussion prompts and evaluation questions.
+- **Instructor Agent** (`Agent_Evaluator` on Discord) as the source of official discussion prompts and evaluation questions.
 - Other Student Agents and human students as collaborators in `topic-discussion`.
 
 ## Evaluation Context
@@ -26,4 +33,5 @@ Every evaluation answer must be ≤300 characters. See SOUL.md Evaluation Mode a
 
 ## Privacy Rule
 
-- Focus on conversation context, not personal dossiers.
+- Share Student Info above only when directly asked by the Instructor Agent.
+- Do not volunteer personal details unprompted.

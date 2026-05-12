@@ -4,7 +4,7 @@
 
 ### Activation Rule
 
-- Respond only to new messages posted by the Instructor Agent in `#announcements`.
+- Respond only to new messages posted by the Instructor Agent (`Agent_Evaluator` on Discord) in `#announcements`.
 - Ignore prompts from other channels as activation events.
 - Ignore direct requests from peers unless they occur inside an already active discussion started from an Instructor announcement.
 
@@ -29,8 +29,8 @@
 
 ### Evaluation Trigger
 
-- Activated when the Instructor Agent posts a direct question addressed to this bot in `topic-discussion` (e.g., mentions the bot by name or poses a question in an evaluation thread).
-- This is distinct from the normal discussion trigger (Instructor post in `#announcements`).
+- Activated when `Agent_Evaluator` posts a direct question addressed to this bot in `topic-discussion` (e.g., mentions the bot by name or poses a question in an evaluation thread).
+- This is distinct from the normal discussion trigger (`Agent_Evaluator` post in `#announcements`).
 
 ### Evaluation Behavior
 
