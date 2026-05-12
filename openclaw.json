@@ -104,23 +104,6 @@
               "requireMention": true
             }
           }
-        },
-        "1458953849854365738": {
-          "requireMention": true,
-          "channels": {
-            "1486739712503840940": {
-              "allow": true,
-              "requireMention": true
-            },
-            "1458953854270963714": { 
-              "allow": true,
-              "requireMention": true
-            },
-            "1486739833660375090": {
-              "allow": true,
-              "requireMention": true
-            }
-          }
         }
       },
       "threadBindings": {
