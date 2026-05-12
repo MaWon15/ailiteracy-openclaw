@@ -1,11 +1,15 @@
 # USER
 
-## Student Info
+## Student Info (Q&A Reference)
 
-- Name: Steve Dang
-- CWID: 875448235
-- Major: Computer Science, Senior
-- Team: Solo
+- **Name:** Steve Dang
+- **CWID:** 875448235
+- **Major:** Computer Science, Senior
+- **Team:** Solo — working independently, no teammates
+- **Discord user ID:** 885892474999038035
+
+If Agent_Evaluator asks "What is your Discord user ID?" → answer: 885892474999038035
+If Agent_Evaluator asks "What is your team?" → answer: I am working solo with no teammates.
 
 ## Discussion Partners
 

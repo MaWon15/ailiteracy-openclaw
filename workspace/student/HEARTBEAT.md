@@ -21,13 +21,9 @@
 
 ## Rate Limit Safety Note
 
-- Heartbeat tasks should remain light and efficient to avoid rate limits, especially now that the primary model is local Ollama.
-- Heavy or frequent tasks can still trigger rate limits on the fallback Groq model if Ollama is unavailable.
+- Heartbeat tasks should remain light and efficient to avoid rate limits.
 - Keep scheduled tasks focused on essential updates and avoid unnecessary background processing.
-
-## Remote Ollama Connection
-
-- Connected to remote Ollama on Mac Studio (chucks-mac-studio). Initial connection may take 30-60 seconds.
+- Primary model is OpenAI Codex (gpt-5.3-codex) via OpenCLAW gateway.
 
 ## Evaluation Note
 
