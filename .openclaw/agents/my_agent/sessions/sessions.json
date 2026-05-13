@@ -1222,7 +1222,7 @@
       "accountId": "custom-1"
     },
     "sessionId": "0713e492-88cb-4eec-98fa-eb750b2416d8",
-    "updatedAt": 1777396555783,
+    "updatedAt": 1778645561137,
     "deliveryContext": {
       "channel": "discord",
       "to": "channel:1479995367754960946",
@@ -1330,16 +1330,16 @@
       ],
       "version": 0
     },
-    "modelProvider": "openai-codex",
-    "model": "gpt-5.3-codex",
-    "contextTokens": 272000,
+    "modelProvider": "openai",
+    "model": "gpt-5.1-codex",
+    "contextTokens": 400000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1777396551459,
+      "generatedAt": 1778645557003,
       "sessionId": "0713e492-88cb-4eec-98fa-eb750b2416d8",
       "sessionKey": "agent:my_agent:discord:channel:1479995367754960946",
-      "provider": "openai-codex",
-      "model": "gpt-5.3-codex",
+      "provider": "openai",
+      "model": "gpt-5.1-codex",
       "workspaceDir": "/Users/stevedang/Documents/C++/ailiteracy-openclaw/workspace/student",
       "bootstrapMaxChars": 20000,
       "bootstrapTotalMaxChars": 150000,
@@ -1348,57 +1348,57 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 24559,
-        "projectContextChars": 13580,
-        "nonProjectContextChars": 10979
+        "chars": 31441,
+        "projectContextChars": 20346,
+        "nonProjectContextChars": 11095
       },
       "injectedWorkspaceFiles": [
         {
           "name": "AGENTS.md",
           "path": "/Users/stevedang/Documents/C++/ailiteracy-openclaw/workspace/student/AGENTS.md",
           "missing": false,
-          "rawChars": 2047,
-          "injectedChars": 2047,
+          "rawChars": 2003,
+          "injectedChars": 2003,
           "truncated": false
         },
         {
           "name": "SOUL.md",
           "path": "/Users/stevedang/Documents/C++/ailiteracy-openclaw/workspace/student/SOUL.md",
           "missing": false,
-          "rawChars": 1676,
-          "injectedChars": 1676,
+          "rawChars": 2252,
+          "injectedChars": 2252,
           "truncated": false
         },
         {
           "name": "TOOLS.md",
           "path": "/Users/stevedang/Documents/C++/ailiteracy-openclaw/workspace/student/TOOLS.md",
           "missing": false,
-          "rawChars": 3360,
-          "injectedChars": 3360,
+          "rawChars": 7053,
+          "injectedChars": 7053,
           "truncated": false
         },
         {
           "name": "IDENTITY.md",
           "path": "/Users/stevedang/Documents/C++/ailiteracy-openclaw/workspace/student/IDENTITY.md",
           "missing": false,
-          "rawChars": 2503,
-          "injectedChars": 2503,
+          "rawChars": 4785,
+          "injectedChars": 4785,
           "truncated": false
         },
         {
           "name": "USER.md",
           "path": "/Users/stevedang/Documents/C++/ailiteracy-openclaw/workspace/student/USER.md",
           "missing": false,
-          "rawChars": 1265,
-          "injectedChars": 1265,
+          "rawChars": 1761,
+          "injectedChars": 1761,
           "truncated": false
         },
         {
           "name": "HEARTBEAT.md",
           "path": "/Users/stevedang/Documents/C++/ailiteracy-openclaw/workspace/student/HEARTBEAT.md",
           "missing": false,
-          "rawChars": 1818,
-          "injectedChars": 1818,
+          "rawChars": 1581,
+          "injectedChars": 1581,
           "truncated": false
         },
         {
@@ -1510,13 +1510,13 @@
         ]
       }
     },
-    "inputTokens": 20120,
-    "outputTokens": 163,
+    "inputTokens": 22041,
+    "outputTokens": 43,
     "cacheRead": 0,
     "cacheWrite": 0,
-    "totalTokens": 20120,
+    "totalTokens": 22041,
     "totalTokensFresh": true,
-    "authProfileOverride": "openai-codex:default",
+    "authProfileOverride": "openai:default",
     "authProfileOverrideSource": "auto",
     "authProfileOverrideCompactionCount": 0
   },
