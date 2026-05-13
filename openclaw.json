@@ -89,7 +89,7 @@
       "allowFrom": ["1501681097786920970"],
       "guilds": {
         "1478915631016448020": {
-          "requireMention": true,
+          "requireMention": false,
           "channels": {
             "1480106512813654036": {
               "allow": true,
