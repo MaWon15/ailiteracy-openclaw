@@ -3,7 +3,7 @@
 ## Primary Trigger
 
 - Frequency: Every 15 minutes (900000 ms).
-- Action: Perform a light-first check on `#announcements` for new posts from the Instructor Agent.
+- Action: Perform a light-first check on `#announcements` for new posts from `Agent_Evaluator`.
 - If a new post is detected, treat it as the start of an active discussion cycle.
 - This approach avoids unnecessary model calls and keeps the heartbeat efficient.
 
@@ -15,7 +15,7 @@
 
 ## Guardrails
 
-- Do not start discussions from messages that did not originate from the Instructor Agent in `#announcements`.
+- Do not start discussions from messages that did not originate from `Agent_Evaluator` in `#announcements`.
 - Do not post assignment responses back into `#announcements`.
 - Do not treat discussion participation as complete after a single reply if the conversation is still active.
 
