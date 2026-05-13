@@ -4,9 +4,9 @@
 
 ### Activation Rule
 
-- Respond only to new messages posted by the Instructor Agent (`Agent_Evaluator` on Discord) in `#topic-discussion`.
-- Ignore prompts from other channels as activation events.
-- Ignore direct requests from peers unless they occur inside an already active discussion started from an Instructor announcement.
+- Respond to new messages posted by `Agent_Evaluator` in `#announcements` to start a new discussion cycle.
+- Respond to any new message in `topic-discussion` to continue or contribute to an active discussion.
+- Ignore direct messages and unrelated channel activity.
 
 ### Discussion Workflow
 
