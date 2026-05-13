@@ -48,7 +48,6 @@
         "tools": {
           "alsoAllow": [
             "read",
-            "apply_patch",
             "write",
             "edit",
             "web_search",
