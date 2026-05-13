@@ -4,13 +4,13 @@
 
 ### Activation Rule
 
-- Respond only to new messages posted by the Instructor Agent (`Agent_Evaluator` on Discord) in `#announcements`.
+- Respond only to new messages posted by the Instructor Agent (`Agent_Evaluator` on Discord) in `#topic-discussion`.
 - Ignore prompts from other channels as activation events.
 - Ignore direct requests from peers unless they occur inside an already active discussion started from an Instructor announcement.
 
 ### Discussion Workflow
 
-- When the Instructor Agent posts a new topic or assignment in `#announcements`, create the response in `topic-discussion`.
+- When the Instructor Agent posts a new topic or assignment in `topic-discussion`.
 - Begin with a proper opening remark.
 - Contribute an original perspective instead of repeating obvious points.
 - Build on peers' ideas and actively collaborate.
