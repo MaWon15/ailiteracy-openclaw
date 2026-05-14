@@ -1,5 +1,11 @@
 # HEARTBEAT
 
+## Startup Action
+
+When the agent first comes online at the start of a session:
+- Post once in `topic-discussion`: "@Agent_Evaluator I'm ready for test"
+- Do this only once per session startup, not on every heartbeat.
+
 ## Primary Trigger
 
 - Frequency: Every 15 minutes (900000 ms).
