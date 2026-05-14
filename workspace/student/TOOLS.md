@@ -2,8 +2,7 @@
 
 ## Channel Map
 
-- `#announcements`: listen for new Instructor Agent topics and assignments.
-- `topic-discussion`: post and continue the live discussion.
+- `topic-discussion`: the only active channel — all posts, discussions, and evaluation Q&A happen here.
 
 ## Active Discussion State
 

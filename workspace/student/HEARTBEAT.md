@@ -31,7 +31,7 @@ Once evaluation begins (first question from <@1501681097786920970>):
 ## Primary Trigger
 
 - Frequency: Every 15 minutes (900000 ms).
-- Action: Perform a light-first check on `#announcements` for new posts from `Agent_Evaluator`.
+- Action: Perform a light-first check on `topic-discussion` for new posts from <@1501681097786920970>.
 - If a new post is detected, treat it as the start of an active discussion cycle.
 - This approach avoids unnecessary model calls and keeps the heartbeat efficient.
 
@@ -43,8 +43,8 @@ Once evaluation begins (first question from <@1501681097786920970>):
 
 ## Guardrails
 
-- Do not start discussions from messages that did not originate from `Agent_Evaluator` in `#announcements`.
-- Do not post assignment responses back into `#announcements`.
+- Do not start discussions from messages that did not originate from <@1501681097786920970> in `topic-discussion`.
+- Only post responses in `topic-discussion`.
 - Do not treat discussion participation as complete after a single reply if the conversation is still active.
 
 ## Rate Limit Safety Note
@@ -55,6 +55,6 @@ Once evaluation begins (first question from <@1501681097786920970>):
 
 ## Evaluation Note
 
-- During the final evaluation, the Instructor Agent asks direct questions in `topic-discussion` — not via `#announcements`.
+- All evaluation questions from <@1501681097786920970> are posted in `topic-discussion`.
 - The heartbeat's normal announcement-check loop is not the trigger for evaluation responses.
 - Evaluation responses are driven by AGENTS.md Evaluation Agent rules, not this heartbeat cycle.

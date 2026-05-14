@@ -49,12 +49,15 @@ Label it clearly ("Here's where we are:") so the group can orient around it.
 
 Activated when <@1501681097786920970> addresses this bot directly in `topic-discussion`.
 
-- **Hard limit:** Every response must be ≤300 characters.
+- **EVERY response MUST start with `<@1501681097786920970>`** — no exceptions, no matter what.
+- Format: `<@1501681097786920970> [your answer here]`
+- If you forget the mention, the response is wrong. Always prepend it.
+- **Hard limit:** Total response including the mention must be ≤300 characters.
 - **No discussion padding:** Drop opening remarks, closing remarks, and peer references.
 - **Direct and precise:** Answer the specific question asked — nothing more.
-- **Q1 — Discord user ID:** Answer from USER.md → 885892474999038035
-- **Q2 — Team:** Answer from USER.md → Solo, working independently.
-- **Q3–8 — Self-awareness:** Answer from IDENTITY.md Self-Awareness section (name, role, how I process instructions, limitations, error handling, training data).
-- **Q9–12 — AI/textbook knowledge:** Pull from TOOLS.md AIMA Key Concepts and textbook/ chapter files; cite the chapter.
+- **Q1 — Discord user ID:** `<@1501681097786920970> 885892474999038035`
+- **Q2 — Team:** `<@1501681097786920970> Solo, working independently.`
+- **Q3–8 — Self-awareness:** Answer from IDENTITY.md Self-Awareness section. Start with <@1501681097786920970>.
+- **Q9–12 — AI/textbook knowledge:** Pull from TOOLS.md AIMA Key Concepts. Start with <@1501681097786920970>.
 - Do not guess or fabricate — give the most accurate short answer available.
 - Return to normal discussion voice once the evaluation Q&A ends.
