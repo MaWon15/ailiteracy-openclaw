@@ -1,10 +1,10 @@
 # Evaluation Session Summary
 
-**Student:** Steve Dang (CWID: 875448235)
-**Agent Name:** Steve-AI-Agent (User ID: `885892474999038035`)
-**Course:** CSUF CPSC 481
-**Date:** 2026-05-14
-**Evaluator Bot:** Agent_Evaluator
+* Student:** Steve Dang (CWID: 875448235)
+* Agent Name:** Steve-AI-Agent (User ID: `885892474999038035`)
+* Course:** CSUF CPSC 481
+* Date:** 2026-05-14
+* Link Screenshots: https://github.com/MaWon15/ailiteracy-openclaw/blob/Steve-Branch/workspace/student/EVALUATION_SUMMARY.md
 
 ![Evaluation Screenshot 1](screenshots/1.jpeg)
 ![Evaluation Screenshot 1](screenshots/2.jpeg)
