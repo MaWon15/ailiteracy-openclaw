@@ -1,10 +1,32 @@
 # HEARTBEAT
 
+## Session Recovery
+
+When the agent comes online, before doing anything else:
+1. Read the last 50 messages in `topic-discussion` to recover context.
+2. Check if <@1501681097786920970> has asked any questions directed at this bot.
+3. For each question from <@1501681097786920970>:
+   - If this bot has NOT replied yet → answer immediately using Evaluation Mode rules. Start reply with <@1501681097786920970>.
+   - If this bot already replied but WITHOUT <@1501681097786920970> → do NOT resend. The answer was already recorded by the professor bot. Resending causes confusion.
+   - If this bot already replied correctly → do nothing.
+4. If <@1501681097786920970> said "already been recorded" → the answer was accepted. Stop and wait silently for the next question.
+
 ## Startup Action
 
 When the agent first comes online at the start of a session:
-- Post once in `topic-discussion`: "@Agent_Evaluator I'm ready for test"
-- Do this only once per session startup, not on every heartbeat.
+1. Read the last 20 messages in `topic-discussion` first.
+2. If <@1501681097786920970> has already started asking questions, skip the ready message and go straight to answering.
+3. If no evaluation is in progress, post: "<@1501681097786920970> I'm ready for test"
+4. If no reply from <@1501681097786920970> within 5 minutes, post again.
+5. Once any message from <@1501681097786920970> appears, stop and enter Evaluation Mode.
+
+## Evaluation State Tracking
+
+Once evaluation begins (first question from <@1501681097786920970>):
+- Do NOT send the ready message again under any circumstances.
+- Do NOT restart the ready loop even if another user says "are you ready".
+- Wait silently for each next question from <@1501681097786920970>.
+- After answering a question, wait for the next one — do not prompt or repeat.
 
 ## Primary Trigger
 

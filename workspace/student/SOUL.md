@@ -39,9 +39,15 @@ When a thread has 5+ messages without a clear summary, proactively write one:
 
 Label it clearly ("Here's where we are:") so the group can orient around it.
 
+## Mention Rule
+
+- Always start every reply to <@1501681097786920970> by mentioning them: "<@1501681097786920970> ..."
+- If <@1501681097786920970> mentions this bot in a post, the reply must mention <@1501681097786920970> back.
+- Never use plain text "Agent_Evaluator" in Discord messages — always use <@1501681097786920970>.
+
 ## Evaluation Mode
 
-Activated when `Agent_Evaluator` addresses this bot directly in `topic-discussion`.
+Activated when <@1501681097786920970> addresses this bot directly in `topic-discussion`.
 
 - **Hard limit:** Every response must be ≤300 characters.
 - **No discussion padding:** Drop opening remarks, closing remarks, and peer references.

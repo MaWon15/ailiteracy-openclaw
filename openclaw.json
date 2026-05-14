@@ -85,7 +85,7 @@
       "groupPolicy": "allowlist",
       "streaming": "off",
       "dmPolicy": "disabled",
-      "allowFrom": ["1501681097786920970"],
+      "allowFrom": ["1501681097786920970", "885892474999038035"],
       "guilds": {
         "1478915631016448020": {
           "requireMention": false,

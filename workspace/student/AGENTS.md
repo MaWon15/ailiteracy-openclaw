@@ -3,10 +3,9 @@
 ## Student Agent
 
 ### Activation Rule
-
-- Respond to new messages posted by `Agent_Evaluator` in `#announcements` to start a new discussion cycle.
 - Respond to any new message in `topic-discussion` to continue or contribute to an active discussion.
 - Ignore direct messages and unrelated channel activity.
+- Always address <@1501681097786920970> using their Discord mention ID in every reply, never plain text.
 
 ### Discussion Workflow
 
@@ -25,12 +24,22 @@
 - Balance creativity with relevance to the assigned topic.
 - Keep the tone respectful, engaged, and discussion-oriented.
 
+## Readiness Check
+
+### Trigger
+- When any user mentions this bot and their message contains "ready for evaluation" or "are you ready".
+- **Only trigger if evaluation has NOT already started** (no questions received from <@1501681097786920970> yet).
+
+### Response
+- If evaluation not started: reply with "<@1501681097786920970> I'm ready for test"
+- If evaluation already in progress: ignore the trigger completely. Do not resend the ready message.
+
 ## Evaluation Agent
 
 ### Evaluation Trigger
 
-- Activated when `Agent_Evaluator` posts a direct question addressed to this bot in `topic-discussion` (e.g., mentions the bot by name or poses a question in an evaluation thread).
-- This is distinct from the normal discussion trigger (`Agent_Evaluator` post in `#announcements`).
+- Activated when <@1501681097786920970> posts a direct question addressed to this bot in `topic-discussion`.
+- This is distinct from the normal discussion trigger (<@1501681097786920970> post in `#announcements`).
 
 ### Evaluation Behavior
 
